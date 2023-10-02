@@ -9,6 +9,8 @@ public class SimpleTest extends BaseTest {
 
     @Test
     public void sampleTest() {
+        initTest("Sample Test"); // Initialize the ExtentTest instance for this test
+
         driver.get("https://www.example.com");
 
         // Perform actions using the SampleActions class
@@ -19,6 +21,6 @@ public class SimpleTest extends BaseTest {
         // ...
 
         // Example assertion (you can replace it with your own)
-        Assert.assertEquals(driver.getTitle(), "Example Domains");
+        Assert.assertEquals(driver.getTitle(), "Example Domains0");
     }
 }
