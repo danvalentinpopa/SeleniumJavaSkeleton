@@ -12,7 +12,7 @@ import java.util.Date;
 
 public class ScreenshotUtils {
 
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public ScreenshotUtils(WebDriver driver) {
         this.driver = driver;

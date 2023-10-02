@@ -5,11 +5,9 @@ import org.openqa.selenium.WebElement;
 import pages.SamplePageElements;
 
 public class SampleActions {
-    private WebDriver driver;
-    private SamplePageElements samplePageElements;
+    private final SamplePageElements samplePageElements;
 
     public SampleActions(WebDriver driver) {
-        this.driver = driver;
         this.samplePageElements = new SamplePageElements(driver);
     }
 

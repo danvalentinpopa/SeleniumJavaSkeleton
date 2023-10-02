@@ -18,8 +18,7 @@ public class ReportManager {
     }
 
     public static ExtentTest createTest(String testName) {
-        ExtentTest test = getInstance().createTest(testName);
-        return test;
+        return getInstance().createTest(testName);
     }
 }
 

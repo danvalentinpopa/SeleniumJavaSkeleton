@@ -5,7 +5,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 public class SamplePageElements {
-    private WebDriver driver;
+    private final WebDriver driver;
 
     public SamplePageElements(WebDriver driver) {
         this.driver = driver;
