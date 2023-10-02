@@ -1,12 +1,9 @@
 import actions.SampleActions;
-import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
-import org.testng.annotations.AfterSuite;
-import org.testng.annotations.BeforeSuite;
 import org.testng.annotations.Test;
-import utils.DriverFactory;
+import utils.BaseTest;
 
-public class SimpleTest extends BaseTest{
+public class SimpleTest extends BaseTest {
 
     private SampleActions sampleActions;
 
