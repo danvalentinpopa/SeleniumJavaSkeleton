@@ -5,10 +5,4 @@
             <class name="SimpleTest"/>
         </classes>
     </test>
-
-    <test name="SampleTest2">
-        <classes>
-            <class name="SimpleTest"/>
-        </classes>
-    </test>
 </suite>

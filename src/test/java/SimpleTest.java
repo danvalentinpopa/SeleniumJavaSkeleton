@@ -21,6 +21,6 @@ public class SimpleTest extends BaseTest {
         // ...
 
         // Example assertion (you can replace it with your own)
-        Assert.assertEquals(driver.getTitle(), "Example Domains0");
+        Assert.assertEquals(driver.getTitle(), "Example Domains");
     }
 }
