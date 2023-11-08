@@ -1,8 +1,8 @@
-package actions;
+package old;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
-import pages.SamplePageElements;
+import old.SamplePageElements;
 
 public class SampleActions {
     private final SamplePageElements samplePageElements;

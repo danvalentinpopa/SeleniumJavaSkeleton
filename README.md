@@ -6,7 +6,7 @@ This is a simple Selenium WebDriver-based test automation framework using Java, 
 The project is structured as follows:
 
 - `pages`: Contains classes for web element selectors.
-- `actions`: Contains classes for action methods.
+- `pages.elements.actions`: Contains classes for action methods.
 - `BaseTest.java`: Base test class for driver management.
 - `SampleTest.java`, `AnotherTest.java`, etc.: Test classes that extend `BaseTest` for test logic.
 
@@ -39,7 +39,7 @@ Writing Tests
 
 2. Extend the BaseTest class in your test classes for driver management.
 
-3. Implement your test logic using web element selectors and action methods from the pages and actions packages.
+3. Implement your test logic using web element selectors and action methods from the pages and pages.elements.actions packages.
 
 Test Data
 1. You can store test data in the src/main/resources/testdata directory. Access it using appropriate methods in your test classes.

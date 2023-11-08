@@ -1,26 +1,27 @@
-import actions.SampleActions;
+package old;
+
 import org.testng.Assert;
-import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import utils.BaseTest;
 
 public class SimpleTest extends BaseTest {
 
+
+    //    @Parameters({"website title"})
     @Test
-    @Parameters({"website title"})
-    public void sampleTest(String title) {
+    public void sampleTest() {
         initTest("Sample Test"); // Initialize the ExtentTest instance for this test
 
         driver.get("https://www.example.com");
 
-        // Perform actions using the SampleActions class
+        // Perform pages.elements.actions using the SampleActions class
         SampleActions sampleActions = new SampleActions(driver); // Initialize SampleActions object
         sampleActions.clickMoreInfoLink();
 
-        // Perform assertions or additional actions
+        // Perform assertions or additional pages.elements.actions
         // ...
 
         // Example assertion (you can replace it with your own)
-        Assert.assertEquals(driver.getTitle(), title);
+        Assert.assertEquals(driver.getTitle(), "Example Domains");
     }
 }
