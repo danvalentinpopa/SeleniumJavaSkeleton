@@ -22,7 +22,7 @@ The project is structured as follows:
 
 1. Clone this repository to your local machine:
 
-git clone https://github.com/yourusername/SeleniumTestProject.git
+git clone https://github.com/danvalentinpopa/SeleniumJavaSkeleton
 
 1. Open the project in your preferred IDE.
 
