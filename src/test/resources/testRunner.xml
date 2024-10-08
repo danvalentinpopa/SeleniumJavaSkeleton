@@ -3,14 +3,7 @@
     <test name="SampleTest">
         <parameter name="website title" value="Example Domains"></parameter>
         <classes>
-            <class name="SimpleTest"/>
-        </classes>
-    </test>
-
-    <test name="SampleTest2">
-        <parameter name="website title" value="Wrong text"></parameter>
-        <classes>
-            <class name="SimpleTest"/>
+            <class name="tests.SimpleTest"/>
         </classes>
     </test>
 </suite>

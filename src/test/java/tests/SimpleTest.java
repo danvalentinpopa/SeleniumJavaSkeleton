@@ -1,3 +1,5 @@
+package tests;
+
 import actions.SampleActions;
 import org.testng.Assert;
 import org.testng.annotations.Parameters;
@@ -9,7 +11,6 @@ public class SimpleTest extends BaseTest {
     @Test
     @Parameters({"website title"})
     public void sampleTest(String title) {
-        initTest("Sample Test"); // Initialize the ExtentTest instance for this test
 
         driver.get("https://www.example.com");
 
