@@ -1,48 +1,48 @@
 # Selenium WebDriver Test Automation Framework
 
-This is a simple Selenium WebDriver-based test automation framework using Java, TestNG, and WebDriverManager for efficient driver management.
+A simple, maintainable test automation framework using Java, Selenium WebDriver, TestNG, and WebDriverManager.
 
+## Project Structure
+- `src/main/java/pages/` — Page Object classes (web element selectors)
+- `src/main/java/actions/` — Action classes (user interactions)
+- `src/test/java/BaseTest.java` — Base test class (driver management)
+- `src/test/java/SampleTest.java`, `AnotherTest.java`, etc. — Test classes (extend `BaseTest`)
+- `src/main/resources/testdata/` — Test data files
+- `src/test/resources/testng.xml` — TestNG suite configuration
 
-The project is structured as follows:
+## Prerequisites
+- Java JDK 8 or higher
+- Maven
+- IntelliJ IDEA or Eclipse
 
-- `pages`: Contains classes for web element selectors.
-- `actions`: Contains classes for action methods.
-- `BaseTest.java`: Base test class for driver management.
-- `SampleTest.java`, `AnotherTest.java`, etc.: Test classes that extend `BaseTest` for test logic.
+## Setup
+1. Clone the repository:
+   git clone https://github.com/danvalentinpopa/SeleniumJavaSkeleton
 
-## Getting Started
+2. Open the project in your IDE.
+3. Ensure dependencies in `pom.xml`:
+    - Selenium WebDriver
+    - WebDriverManager
+    - TestNG
 
-### Prerequisites
+## Running Tests
+- From IDE: Right-click `testng.xml` and select "Run" as TestNG Suite.
+- From command line: mvn clean test
 
-- Java Development Kit (JDK) installed on your system.
-- An integrated development environment (IDE) like Eclipse or IntelliJ IDEA.
-- Maven for dependency management (optional).
+## Writing Tests
+1. Create new test classes in `src/test/java`.
+2. Extend `BaseTest` for automatic driver setup/teardown.
+3. Use Page Object classes from `pages` and actions from `actions`.
 
-### Setup
+## Test Data
+- Store test data in `src/main/resources/testdata`.
+- Access data in your tests as needed.
 
-1. Clone this repository to your local machine:
+## Reporting
+- Integrate a reporting tool (e.g., Allure, ExtentReports) for enhanced test result visualization.
 
-git clone https://github.com/danvalentinpopa/SeleniumJavaSkeleton
+## Contributing
+Pull requests are welcome. For major changes, open an issue first to discuss your ideas.
 
-1. Open the project in your preferred IDE.
-
-2. Add necessary dependencies to the pom.xml file, including WebDriverManager, Selenium WebDriver, and TestNG.
-
-Running Tests
-You can run the tests using TestNG:
-1. Right-click on the testng.xml file in the src/test/resources directory.
-
-2. Select "Run As" > "TestNG Suite" (Eclipse) or use the TestNG command-line runner.
-
-Writing Tests
-1. Create test classes in the src/test/java directory.
-
-2. Extend the BaseTest class in your test classes for driver management.
-
-3. Implement your test logic using web element selectors and action methods from the pages and actions packages.
-
-Test Data
-1. You can store test data in the src/main/resources/testdata directory. Access it using appropriate methods in your test classes.
-
-Reporting
-1. Add a test reporting mechanism of your choice to the framework for better test result visualization.
+## License
+This project is licensed under the MIT License.
