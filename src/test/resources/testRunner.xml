@@ -1,16 +1,9 @@
-<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
 <suite name="SeleniumTestSuite">
     <test name="SampleTest">
-        <parameter name="website title" value="Example Domains"></parameter>
+        <parameter name="browser" value="chrome"/>
+        <parameter name="websiteTitle" value="Example Domains"/>
         <classes>
-            <class name="SimpleTest"/>
-        </classes>
-    </test>
-
-    <test name="SampleTest2">
-        <parameter name="website title" value="Wrong text"></parameter>
-        <classes>
-            <class name="SimpleTest"/>
+            <class name="tests.SampleTestBase"/>
         </classes>
     </test>
 </suite>
