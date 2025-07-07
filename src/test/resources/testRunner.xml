@@ -1,7 +1,12 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+
 <suite name="SeleniumTestSuite">
+    <listeners>
+        <listener class-name="utils.TestPropertiesListener"/>
+    </listeners>
     <test name="SampleTest">
         <parameter name="browser" value="chrome"/>
-        <parameter name="websiteTitle" value="Example Domains"/>
+        <parameter name="testPropsFile" value="SampleTestBase"/>
         <classes>
             <class name="tests.SampleTestBase"/>
         </classes>
